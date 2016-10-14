@@ -1,0 +1,21 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+CREATE TABLE IF NOT EXISTS `blog`(
+`ID`int UNSIGNED NOT NULL AUTO_INCREMENT,
+`titre`varchar(255) NOT NULL,
+`date` datetime NOT NULL,
+`contenu`text NOT NULL,
+	key `ID`(`ID`)
+)ENGINE=MYISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `commentaires`(
+`ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
+`pseudo`varchar(255) NOT NULL,
+`com`text NOT NULL,
+	KEY `ID`(`ID`)
+)ENGINE=MYISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+INSERT INTO `blog`('ID,titre,date,contenu'),
+
+INSERT INTO `commentaires`('ID,pseudo,com'),
+
